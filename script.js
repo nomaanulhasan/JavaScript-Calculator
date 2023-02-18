@@ -12,7 +12,6 @@ class Calculator {
   }
 
   initiTheme(theme) {
-    console.log('initiTheme', this.theme, window.matchMedia('(prefers-color-scheme: light)').matches);
     const calcTheme = theme || localStorage.getItem('theme') || 'dark';
 		// window.matchMedia('(prefers-color-scheme: dark)').matches
 		// 	? 'dark'
@@ -117,37 +116,15 @@ class Calculator {
       localStorage?.setItem('theme', theme);
       document.body.className = theme;
     } else {
-      // const theme =
-      //   localStorage?.getItem('theme') ||
-      //   window.matchMedia('(prefers-color-scheme: light)').matches
-      //     ? 'light'
-      //     : 'dark';
-      // this.theme = theme;
-      // localStorage?.setItem('theme', theme);
-      // document.body.className = theme;
-      console.log('else', this.theme);
+      const theme =
+        localStorage?.getItem('theme') ||
+        window.matchMedia('(prefers-color-scheme: light)').matches
+          ? 'light'
+          : 'dark';
+      this.theme = theme;
+      localStorage?.setItem('theme', theme);
+      document.body.className = theme;
     }
-    console.log('onchange', this.theme, localStorage?.getItem('theme'));
-    // if (this.theme === '') {
-    //   setTimeout(() => {
-    //     const theme =
-    //       localStorage?.getItem('theme') ||
-    //       window.matchMedia('(prefers-color-scheme: light)').matches
-    //         ? 'light'
-    //         : 'dark';
-    //     this.theme = theme;
-    //     localStorage?.setItem('theme', theme);
-    //     document.body.className = theme;
-    //   }, 1000);
-    // } else if (this.theme === 'light') {
-    //   this.theme = 'dark';
-    //   localStorage?.setItem('theme', 'dark');
-    //   document.body.className = 'dark';
-    // } else {
-    //   this.theme = 'light';
-    //   localStorage?.setItem('theme', 'light');
-    //   document.body.className = 'light';
-    // }
   }
 }
 
