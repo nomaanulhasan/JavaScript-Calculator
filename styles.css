@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: Cabin, sans-serif;
+	font-weight: normal;
+}
+
+body {
+	background: linear-gradient(to top right, #167168, #2acbbd);
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+.calculator {
+	--rounded: 1rem;
+	--spacing: 1rem;
+
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+	grid-template-columns: repeat(4, 100px);
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	display: grid;
+}
+
+.calculator>button {
+	box-shadow: 0 0 20px rgb(0 0 0 / 0.15);
+	border: 1px solid rgb(0 0 0 / 0.05);
+	background-color: #F3F3F3;
+	font-size: 2.5vmin;
+	cursor: pointer;
+	outline: none;
+}
+
+.calculator>button:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 20px rgb(0 0 0 / 0.2);
+}
+
+.calculator>button[data-theme] .theme-icon,
+.calculator>button[data-theme] svg {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.calculator>button[data-operation] {
+	background-color: #C2EEEB;
+	font-size: 4vmin;
+}
+
+.calculator>button[data-operation]:hover {
+	background-color: #c2eeebee;
+}
+
+.calculator>button[data-equals] {
+	background: linear-gradient(to top right, #228C81, #2AB4A8);
+	text-shadow: 1px 1px 2px rgb(0 0 0 / 0.1);
+	border-radius: 0 0 var(--rounded) 0;
+	font-size: 4.5vmin;
+	color: white;
+}
+
+.calculator>button[data-equals]:hover {
+	background: linear-gradient(to top right, #28988d, #30beb2);
+	text-shadow: 1px 1px 2px rgb(0 0 0 / 0.5);
+}
+
+.btn-dot {
+	border-radius: 0 0 0 var(--rounded);
+}
+
+.span-two {
+	grid-column: span 2;
+}
+
+.output {
+	border-radius: var(--rounded) var(--rounded) 0 0;
+	justify-content: space-around;
+	background-color: white;
+	flex-direction: column;
+	align-items: flex-end;
+	word-wrap: break-word;
+	word-break: break-all;
+	grid-column: 1 / -1;
+	position: relative;
+	display: flex;
+	padding: 10px;
+}
+
+.output .previous-operand {
+	font-size: 1.5rem;
+	color: #46BAAE;
+}
+
+.output .current-operand {
+	font-size: 2.5rem;
+	color: black;
+}
+
+.output button[data-theme] {
+	background-color: red;
+	left: -var(--spacing);
+	top: -var(--spacing);
+	place-items: center;
+	position: absolute;
+	display: grid;
+	border: none;
+	height: 2rem;
+	width: 2rem;
+}
+
+.inline {
+	display: inline;
+}
+
+.hidden {
+	display: none;
+}
+
+
+.dark {
+	background: linear-gradient(to top right, #06342f, #095c55);
+}
+
+.dark .calculator .output {
+	background-color: black;
+}
+
+.dark .calculator .dark-hidden {
+	display: none;
+}
+
+.dark .calculator .dark-inline {
+	display: inline;
+}
+
+.dark .calculator .output .current-operand {
+	color: white;
+}
+
+.dark .calculator>button {
+	border-color: rgb(0 0 0 / 0.3);
+	background-color: #071418;
+	color: white;
+}
+
+.dark .calculator>button:hover {
+	background-color: #071418dd;
+}
+
+.dark .calculator>button[data-operation] {
+	background-color: #044747;
+}
+
+.dark .calculator>button[data-operation]:hover {
+	background-color: #013a3a;
+
+}
+
+.dark .calculator>button[data-equals] {
+	background: linear-gradient(to top right, #09554c, #1aa498);
+}
+
+.dark .calculator>button[data-equals]:hover {
+	background: linear-gradient(to top right, #074d45, #15968b);
+}
