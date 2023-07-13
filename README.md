@@ -12,7 +12,7 @@ This repository contains a simple calculator application built using vanilla Jav
 
 1. Clone the repository to your local machine using the following command:
 
-```git clone https://github.com/your-username/JavaScript-Calculator.git```
+```git clone https://github.com/nomaanulhasan/JavaScript-Calculator.git```
 
 
 2. Open the `index.html` file in your preferred web browser.
@@ -35,7 +35,7 @@ Contributions to the project are welcome. If you find any issues or have suggest
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/nomaanulhasan/JavaScript-Calculator/LICENSE).
+This project is licensed under the [MIT License](/JavaScript-Calculator/LICENSE).
 
 ## Acknowledgements
 
