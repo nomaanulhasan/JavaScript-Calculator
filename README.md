@@ -35,7 +35,7 @@ Contributions to the project are welcome. If you find any issues or have suggest
 
 ## License
 
-This project is licensed under the [MIT License](/JavaScript-Calculator/LICENSE).
+This project is licensed under the [MIT License](/LICENSE).
 
 ## Acknowledgements
 
