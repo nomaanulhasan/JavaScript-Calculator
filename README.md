@@ -41,5 +41,5 @@ This project is licensed under the [MIT License](/LICENSE).
 
 The calculator application is inspired by various online examples and tutorials. Special thanks to the contributors of the following resources:
 
-- [WebDevSimplified: Vanilla-JavaScript-Calculator](https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator)
-- [Rico Smith: Daily UI 004 - Calculator](https://dribbble.com/shots/10903449-Daily-UI-004-Calculator)
+- [WebDevSimplified](https://www.youtube.com/@WebDevSimplified): [Vanilla-JavaScript-Calculator](https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator)
+- [Rico Smith](https://dribbble.com/RicoSmith): [Daily UI 004 - Calculator](https://dribbble.com/shots/10903449-Daily-UI-004-Calculator)
