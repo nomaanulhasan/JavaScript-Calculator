@@ -1,4 +1,4 @@
-# JavaScript Calculator
+# Vanilla JavaScript Calculator
 
 This repository contains a simple calculator application built using vanilla JavaScript. The calculator provides basic mathematical operations and supports both dark and light themes for a visually pleasing experience.
 
